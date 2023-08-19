@@ -1,5 +1,7 @@
 # Wordle Solver
 
+A Wordle solving CLI that uses entropy to solve Wordle puzzles.
+
 ## Quickstart
 ```sh
 git clone https://github.com/bkblanton/wordle_solver.git && cd wordle_solver
@@ -7,6 +9,12 @@ python3 -m pip install -r requirements.txt
 python3 -m wordle_solver --help
 python3 -m wordle_solver -c snake 01210
 ```
+## Clue colors
+- 0 = gray
+- 1 = yellow
+- 2 = green
+
+## Usage
 ```
 usage: __main__.py [-h] [-c [CLUES ...]] [-i INTERACTIVE] [-m] [-t [TEST ...]] [-n TOP_N] [--language LANGUAGE] [--max_guesses MAX_GUESSES] [--word_len WORD_LEN]
                    [--min_freq MIN_FREQ] [--min_freq_ratio MIN_FREQ_RATIO]
